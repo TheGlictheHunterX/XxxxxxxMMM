@@ -1,0 +1,93 @@
+body {
+    background-color: #000;
+    color: #0F0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.terminal {
+    width: 80%;
+    height: 80%;
+    background-color: #000;
+    border: 2px solid #0F0;
+    box-shadow: 0 0 10px #0F0;
+    overflow: hidden;
+    position: relative;
+}
+
+.terminal-header {
+    background-color: #000;
+    color: #0F0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0F0;
+}
+
+.terminal-body {
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.terminal-output {
+    color: #0F0;
+    white-space: pre-wrap;
+    font-size: 14px;
+}
+
+/* Styling the command input */
+#commandInput {
+    background-color: #000;
+    border: none;
+    color: #0F0;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    font-size: 14px;
+}
+
+.close-btn {
+    background-color: #000;
+    border: none;
+    color: #F00;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-btn:hover {
+    color: #FF0;
+}
+
+#gifImage {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ascii-art {
+    padding: 10px;
+    background: #000;
+    overflow: auto;
+    width: 98%;
+    margin-top: 500px; /* زيادة المسافة لجعل النص يبدأ من الأسفل أكثر */
+    white-space: pre-wrap; /* التأكد من أن النص سيتم عرضه بشكل صحيح */
+}
+
+
+
